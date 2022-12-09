@@ -1,0 +1,67 @@
+ .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    min-height: 100vh;
+ }
+
+.note__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap:20px
+}
+
+.note{
+    background-color:#fef68a;
+    margin-bottom:10px;
+    min-height: 170px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    white-space: pre-wrap;
+    box-shadow: 0 0 10px 2px black;
+    transition: scale 1s ease;
+    font-family: "Fasthand";
+}
+
+.note:hover{
+    scale: 1.1;
+}
+
+.note.note__add{
+    background-color:#67d7cc;
+}
+
+textarea{
+    resize: none;
+    border: none;
+    background-color:#67d7cc;
+}
+
+textarea:focus{
+   outline: none;
+}
+
+.save{
+    background-color: #e1e1e1;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.save:hover{
+    cursor: pointer;
+    background-color: #ededed;
+}
+
+.note__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete__icon{
+    cursor: pointer;
+}
